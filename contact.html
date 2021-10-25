@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+   <title>3 Column Layout</title>
+   <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<header class="header"> <p> <img src="assets/img/header.jpg" style="width:100%"> </p> </header>
+<div class="container">
+   <main class="center column">
+       <article>
+           <h1>Contact</h1>
+           <p>
+		   <form action="/php.php" id="form1" method="get">
+		   <label for="fname">Name:</label>
+		   <input type="text" id="fname" name="fname"><br>
+		   <label for="bday">Birthday:</label>
+		   <input type="date" id="bday" name="bday"><br>
+		   <label for="mail">Email:</label>
+		   <input type="email" id="mail" name="mail"><br><br>
+		   <input type="radio" id="male" name="gender" value="male">
+		   <label for="male">Male.</label><br>
+		   <input type="radio" id="female" name="gender" value="female">
+		   <label for="male">Female.</label><br><br>
+		   <label for="state">Country:</label>
+		   <select id="state" name="state">
+			<option value="UA">Ukraine</option>
+			<option value="notUA">not Ukraine</option>
+		   </select>
+		   <label for="phone">Phone number:</label>
+		   <input type="tel" id="phone" name="phone"><br><br>
+		   <label for="pass">Password:</label>
+		   <input type="password" id="pass" name="pass"><br>
+		   <input type="checkbox" id="check" name="check">
+		   <label for="check">I accept terms and conditions.</label><br>
+		   <textarea rows="9" cols="70">notes</textarea><br><br>
+		   <label for="pic">Photo:</label>
+		   <input type="file" id="pic" name="pic"><br><br>
+		   <input type="submit" value="Submit">
+
+		   
+
+
+		   </form>
+		   </p>
+		   
+       </article>
+   </main>
+  <nav class="left column">
+       <h3>Page list</h3>
+       <ul>
+           <li><a href="index.html">Index</a></li>
+       </ul>
+	   <ul>
+           <li><a href="about.html">About</a></li>
+       </ul>
+	   <ul>
+           <li><a href="contact.html">Contact</a></li>
+       </ul>
+	   <ul>
+           <li><a href="media.html">Media</a></li>
+       </ul>
+	   <ul>
+           <li><a href="table.html">Table</a></li>
+       </ul>
+	   <ul>
+           <li><a href="slider.html">Slider</a></li>
+       </ul>
+	   
+   </nav>
+   <div class="right column">
+       <h3>Right heading</h3>
+       <p></p>
+   </div>
+   <div class="push"></div>
+</div>
+<div class="footer-wrapper">
+   <footer class="footer"> <img src="assets/img/footer.png" style="height:60px; width:100%"> </footer>
+</div>
+</body>
+</html>

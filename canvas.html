@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<script src="assets/js/canvas.js"></script>
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+   <title>3 Column Layout</title>
+   <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<header class="header"> <p> <img src="assets/img/header.jpg" style="width:100%"> </p> </header>
+<div class="container">
+   <main class="center column">
+       <article>
+           <h1>Canvas</h1>
+		   <script src="assets/js/canvas.js">
+   window.onload = canvas('draw', {width: 500, height: 300, strokeWidth: 5, strokeColor: "#df4b26"});
+	</script>
+           <p> <canvas id="draw">
+		   <script>
+		   window.onload = function() {
+		   canvas('#draw', {
+   width: 500,
+   height: 300,
+   strokeWidth: 5,
+   strokeColor: "#df4b26"
+})
+};
+	</script>
+	</canvas>
+	<br>
+	<input type="color" id="color-picker" />
+<br>
+<input type="range" id="size" name="size" 
+         min="1" max="100" value="5" step="1">
+<br>		 
+	<div class="toolbar" id="toolbar">	
+</div>
+</p>
+       </article>
+   </main>
+   <nav class="left column">
+       <h3>Page list</h3>
+       <ul>
+           <li><a href="index.html">Index</a></li>
+       </ul>
+	   <ul>
+           <li><a href="about.html">About</a></li>
+       </ul>
+	   <ul>
+           <li><a href="contact.html">Contact</a></li>
+       </ul>
+	   <ul>
+           <li><a href="media.html">Media</a></li>
+       </ul>
+	   <ul>
+           <li><a href="table.html">Table</a></li>
+       </ul>
+	   <ul>
+           <li><a href="slider.html">Slider</a></li>
+       </ul>
+	   
+   </nav>
+   <div class="right column">
+       <h3>Right heading</h3>
+       <p></p>
+   </div>
+   <div class="push"></div>
+</div>
+<div class="footer-wrapper">
+   <footer class="footer"> <img src="assets/img/footer.png" style="height:60px; width:100%"> </footer>
+</div>
+</body>
+</html>

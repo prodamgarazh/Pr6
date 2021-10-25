@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<script src="assets/js/script.js"></script>
+<head>
+<script>
+   window.onload = function() {
+       // ви можете зробити скільки завгодно слайдів
+       let slides = [
+           {
+               title: "Google",
+               background: "assets/img/google_slide.png",
+               link: "http://google.com"
+           }, {
+               title: "Yahoo",
+               background: "assets/img/yahoo_slide.png",
+               link: "http://yahoo.com"
+           }, {
+               title: "Bing",
+               background: "assets/img/microsoft_slide.jpg",
+               link: "https://www.microsoft.com/"
+           }
+       ]
+       Slider.initSlider(slides);
+	   
+	   
+   };
+</script>
+
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+   <title>3 Column Layout</title>
+   <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<header class="header"> <p> <img src="assets/img/header.jpg" style="width:100%"> </p> </header>
+<div class="container">
+   <main class="center column">
+       <article>
+           <h1>Slider</h1>
+           <p>
+		   <label for="check">Hide</label>
+		   <input type="checkbox" id="check" name="check"><br>
+		   <button id="toggle" type="button" class="button">Start</button>
+		   <div id="slider" style = "visibility: visible"></div>
+		   <div class="wrap" id="buttons">
+		   
+		   </div><br>
+		   <button id="prev" type="button" class="button">Prev</button>
+			<button id="next" type="button" class="button">Next</button><br><br>
+			
+		   </p>
+		   
+		   <script>
+		   function left(e) {
+		Slider.prevSlide();
+		};
+		
+		function right(e) {
+		Slider.nextSlide();
+		};
+		
+		function hide(e) {
+		if(document.getElementById("slider").style.visibility === "visible")
+		{
+		document.getElementById("slider").style.visibility="hidden";
+		} else {
+		document.getElementById("slider").style.visibility="visible";
+		}
+		};
+		
+		toggle.addEventListener('click', (event)=>{
+		if (event.target.classList.contains('start')){
+		event.target.innerHTML = 'Start';
+		clearInterval(interval)
+		} else {
+			event.target.innerHTML = 'Stop';
+			interval = setInterval(()=>{
+           Slider.nextSlide();
+		},1000)
+		}
+   event.target.classList.toggle('start')
+})
+
+	   
+	   prev.addEventListener("click", left);
+	   next.addEventListener("click", right);
+	   check.addEventListener("click", hide);
+		   </script>
+		   
+		   
+       </article>
+   </main>
+   <nav class="left column">
+       <h3>Page list</h3>
+       <ul>
+           <li><a href="slider.html">Slider</a></li>
+       </ul>
+	   <ul>
+           <li><a href="slider.html">Slider</a></li>
+       </ul>
+	   <ul>
+           <li><a href="slider.html">Slider</a></li>
+       </ul>
+	   <ul>
+           <li><a href="slider.html">Slider</a></li>
+       </ul>
+	   <ul>
+           <li><a href="slider.html">Slider</a></li>
+       </ul>
+	   <ul>
+           <li><a href="slider.html">Slider</a></li>
+       </ul>
+	   
+   </nav>
+   
+   <div class="right column">
+       <h3>Right heading</h3>
+       <p></p>
+   </div>
+   <div class="push"></div>
+</div>
+<div class="footer-wrapper">
+   <footer class="footer"> <img src="assets/img/footer.png" style="height:60px; width:100%"> </footer>
+</div>
+</body>
+</html>
